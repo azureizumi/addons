@@ -72,7 +72,8 @@ DISCOVERY_PAYLOAD = {
 #        "modes": [ "off", "heat", "fan_only" ],     # 외출 모드는 fan_only로 매핑
         'modes': [ 'heat', 'off' ],     # 외출 모드는 off로 매핑
         'min_temp': '5',
-        'max_temp': '40'
+        'max_temp': '40',
+        'precision': '0.5'
     } ],
     'plug': [ {
         '_intg': 'switch',
