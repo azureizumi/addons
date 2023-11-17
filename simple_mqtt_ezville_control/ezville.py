@@ -73,7 +73,7 @@ DISCOVERY_PAYLOAD = {
         'modes': [ 'heat', 'off' ],     # 외출 모드는 off로 매핑
         'min_temp': '5',
         'max_temp': '40',
-        'precision': '0.5'
+        'temp_step': '0.5'
     } ],
     'plug': [ {
         '_intg': 'switch',
