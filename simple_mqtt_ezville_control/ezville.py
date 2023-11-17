@@ -442,11 +442,11 @@ def ezville_loop(config):
                                         await mqtt_discovery(payload)
                                         await asyncio.sleep(DISCOVERY_DELAY)
                                     
-                                    #setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
-                                    if (int(packet[16 + 4 * rid:18 + 4 * rid], 16) > 127) :
-                                        setT = str(float(int(packet[16 + 4 * rid:18 + 4 * rid], 16)-128)+0.5)
-                                    else:    
-                                        setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
+                                    setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
+                                    #if (int(packet[16 + 4 * rid:18 + 4 * rid], 16) > 127) :
+                                    #    setT = str(float(int(packet[16 + 4 * rid:18 + 4 * rid], 16)-128)+0.5)
+                                    #else:    
+                                    #    setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
                                     
                                     #curT = str(int(packet[18 + 4 * rid:20 + 4 * rid], 16))
                                     if (int(packet[18 + 4 * rid:20 + 4 * rid], 16) > 127) :
