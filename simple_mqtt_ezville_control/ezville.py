@@ -443,13 +443,13 @@ def ezville_loop(config):
                                     
                                     #setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
                                     if (int(packet[16 + 4 * rid:18 + 4 * rid], 16) > 127) :
-                                        setT = str(float(packet[16 + 4 * rid:18 + 4 * rid], 16)-128+0.5)
+                                        setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16)-128)
                                     else:    
                                         setT = str(int(packet[16 + 4 * rid:18 + 4 * rid], 16))
                                     
                                     #curT = str(int(packet[18 + 4 * rid:20 + 4 * rid], 16))
                                     if (int(packet[18 + 4 * rid:20 + 4 * rid], 16) > 127) :
-                                        curT = str(float(packet[18 + 4 * rid:20 + 4 * rid], 16)-128+0.5)
+                                        curT = str(int(packet[18 + 4 * rid:20 + 4 * rid], 16)-128)
                                     else:    
                                        curT = str(int(packet[18 + 4 * rid:20 + 4 * rid], 16))
                                     
